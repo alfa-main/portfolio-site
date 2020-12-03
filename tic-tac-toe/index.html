@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="popup/popup.css">
+	<link rel="stylesheet" href="./css/fontawesome.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="img__container">
+			<img src="./img/gratis-png-logo-tic-tac-ultimate-tic-tac-toe-fuente-logo-del-juego.png" class="img-logo"
+				alt="Tic tac toe">
+			<img src="./img/images.png" class="img-tic" alt="tic tac toe">
+		</div>
+		<div class="wrap">
+			<div class="block" data-i="0" data-k="0"></div>
+			<div class="block" data-i="0" data-k="1"></div>
+			<div class="block" data-i="0" data-k="2"></div>
+			<div class="block" data-i="1" data-k="0"></div>
+			<div class="block" data-i="1" data-k="1"></div>
+			<div class="block" data-i="1" data-k="2"></div>
+			<div class="block" data-i="2" data-k="0"></div>
+			<div class="block" data-i="2" data-k="1"></div>
+			<div class="block" data-i="2" data-k="2"></div>
+		</div>
+		<button class="btn__repeat">Play again</button>
+		<div class="result">
+			<div class="result winX">Wins X: </div>
+			<div class="result winO">Wins O: </div>
+		</div>
+
+		<div id="popup" class="popup">
+			<div class=" popup__body">
+				<div class="popup__content">
+					<span class="icon-close popup__close btn__close"></span>
+					<div class="popup__title">Field is occupied</div>
+					<div class="popup__text">Try clicking on another field</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-2" class="popup">
+			<div class=" popup__body">
+				<div class="popup__content">
+					<span class="icon-close popup__close btn__close"></span>
+					<div class="popup__title">This is modal window number two</div>
+					<div class="popup__text">congratulation with your victory</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-3" class="popup">
+			<div class=" popup__body">
+				<div class="popup__content">
+					<span class="icon-close popup__close btn__close"></span>
+					<div class="popup__title">won a draw</div>
+					<div class="popup__text">
+						<button class="selectionX icon-close" data-selection='true'></button>
+						<button class="selectionO icon-circle-o" data-selection='false'></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-4" class="popup">
+			<div class=" popup__body">
+				<div class="popup__content">
+					<span class="icon-close popup__close btn__close"></span>
+					<div class="popup__title">Game over</div>
+					<div class="popup__text">
+						Play again
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-5" class="popup">
+			<div class=" popup__body">
+				<div class="popup__content">
+					<span class="icon-close popup__close btn__close"></span>
+					<div class="popup__title">Team selection for the first player
+					</div>
+					<div class="popup__text">
+						<button class="selectionX icon-close" data-selection='true'></button>
+						<button class="selectionO icon-circle-o" data-selection='false'></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="popup/popup.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
