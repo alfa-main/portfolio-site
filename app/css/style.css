@@ -60,7 +60,7 @@ table.cart button.btn-table a{
 }
 
 .container .basket {
-    position: fixed;
+    position: absolute;
     right: 3vh;
     top: 5vh;
     width: 20vh;
@@ -79,3 +79,27 @@ table.cart button.btn-table a{
     cursor: pointer;
 }
 
+
+@media (max-width: 768px) {
+    table tr td {
+        display: block;
+    }
+    table tr{
+        border: 5px solid #4caf50;
+    }
+    table button {
+        font-size: 18px;
+    }
+} 
+
+@media (max-width: 451px) { 
+    .container .basket {
+        position: relative;
+    }
+    .container__flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
