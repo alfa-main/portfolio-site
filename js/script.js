@@ -2,7 +2,6 @@ let tab = function () {
     let tabNav = document.querySelectorAll('.portfolio__work-left li a'),
         tabContent = document.querySelectorAll('.portfolio__work-right a'),
         tabName;
-    console.log(tabNav);
 
     for (let i = 0; i < tabNav.length; i++) {
         tabNav[i].addEventListener('click', selectTabNav);
